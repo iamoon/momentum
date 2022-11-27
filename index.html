@@ -13,26 +13,29 @@
   <script src="index.js"> </script>
 
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-
-    * {
-      font-family: 'Poppins', sans-serif;
-    }
+    @font-face {
+        font-family: 'S-CoreDream-3Light';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+   }
 
     body {
+
+        font-family: 'S-CoreDream-3Light';
       
-      background-image: url("https://t1.daumcdn.net/cfile/tistory/217F4234566480C226");
+      background-image: url("https://i.pinimg.com/564x/85/70/e8/8570e8e11ff97a59325d273bf2a6f9c7.jpg");
       background-size: cover;
       background-position: center;
 
-      color: white;
+      color: rgb(255, 255, 255);
 
     }
 
     .time {
-      font-size:80px;
+      font-size:20px;
       font-weight:bold;
-      color: red;
+      color:white;
     }
 
     .greeting{
@@ -50,14 +53,15 @@
     }
 
     .main {
-      width: 40vw;
+      width: auto;
       height: 80vh;
 
       display: flex;
+      align-items:center;
       flex-direction: column;
-      align-items: center;
       justify-content: center;
-      margin-left:auto;
+    
+
     }
 
     .quote {
@@ -77,9 +81,9 @@
 
 <body>
   <div class="main">
+    <div class="greeting"> ARCHI+VERSE </div>
     <div id="time" class="time"> 12:00 </div>
-    <div class="greeting"> Hello, Olive! </div>
-    <div class="todo"> do your best </div>
+    <div class="todo"> it's time to experience architecture that you never imagined </div>
   </div>
   <div class="quote"> 
     <div id="author" class="author"> - the wise - </div>
